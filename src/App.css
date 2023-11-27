@@ -11,31 +11,34 @@ body, h1, ul, form {
 }
 
 body {
-  font-family: 'Arial', Helvetica ,sans-serif;
-  background-color: #1F3C88;
-  color:#0c0c0c;
+  font-family: 'Arial', Helvetica, sans-serif;
+  background-color: revert-layer;
+  color: #0c0c0c;
   line-height: 1.6;
   padding: 20px;
   font-size: 18px;
 }
 
 h1 {
-  color: #88aeae;
-  padding : 20px;
+  color: #fff;
+  padding: 20px;
 }
 
 h2 {
   color: rgb(103, 192, 222);
-  padding : 10px;
+  padding: none;
+  border: none;
 }
+
 form {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 input[type="text"] {
   padding: 8px 70px;
   font-size: 20px;
   margin-right: 8px;
+  border-radius: 50px;
 }
 
 ul {
@@ -44,8 +47,7 @@ ul {
 }
 
 li {
-  background-color: #f6f3f3;
-  border: 1px solid #0b0b0b;
+  background-color: revert-lay;
   margin-bottom: 20px;
   padding: 7px 14px;
   display: flex;
@@ -53,9 +55,29 @@ li {
   align-items: center;
 }
 
+
+.task-content {
+  flex-grow: 1;
+}
+
+span {
+  background-color: lightgrey; 
+  padding: 5px; 
+  border-radius: 5px; 
+}
+
 li button {
-  background-color:#28AFB0;
+  background-color: #28AFB0;
   color: #fff;
   border: none;
   cursor: pointer;
+  align-self: flex-end; 
+  margin-left: 10px; 
+} 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  background-color:revert-layer;
 }
+
+

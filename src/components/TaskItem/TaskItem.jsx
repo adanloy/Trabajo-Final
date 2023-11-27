@@ -12,13 +12,17 @@ const TaskItem = ({ task, onTaskCompleted, onTaskDeleted }) => {
     onTaskDeleted(task.id);
   };
 
-  return (
-    <li style={{ textDecoration: completed ? 'line-through' : 'none' }}>
-      {task.name}
-      <button onClick={handleComplete}>Completada</button>
-      <button onClick={handleDelete}>Borrar</button>
-    </li>
-  );
-};
+      return (
+      <li className="task-item" style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+        <span className="task-content">{task.name}</span>
+        <div className="button-container">
+          <button className="complete-button" onClick={handleComplete}>Completada</button>
+          <button className="delete-button" onClick={handleDelete}>Borrar</button>
+        </div>
+      </li>
+    );
+  };
+  
+  export default TaskItem;
+  
 
-export default TaskItem;
